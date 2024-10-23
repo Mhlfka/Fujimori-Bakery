@@ -1,0 +1,1299 @@
+@charset "utf-8";
+
+/* slider */
+.p-kv_slider .p-kv_slider__nav {
+  justify-content: flex-start;
+}
+
+.p-kv_slider .p-kv_slider__nav__arrow {
+  display: none;
+}
+
+.p-kv_slider .p-kv_slider__nav__pagination {
+  align-items: flex-end;
+}
+
+.p-kv_slider__nav__pagination__dot:not(:last-child) {
+  margin-right: 12px;
+}
+
+.p-kv_slider .p-kv_slider__nav__pagination__dot button {
+  width: 5px;
+  height: 20px;
+  border-radius: 0;
+  opacity: 1;
+  background: #fff !important;
+  transition: color 0.32s;
+}
+
+.p-kv_slider .p-kv_slider__nav__pagination__dot.is-current button {
+  height: 30px;
+}
+
+.p-kv_slider__track__list__item__inner {
+  padding-top: 50%;
+  transform: none;
+}
+
+.p-kv_slider__track__list__item__inner__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.u-text--head--overlay {
+  padding: 40px 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+  width: 360px;
+  color: #171719 !important;
+  margin-bottom: 0;
+}
+
+.p-kv_slider__track__list__item__inner__info__btn {
+  position: relative;
+  padding: 10px 20px;
+  color: #171719 !important;
+  text-decoration: none;
+  overflow: hidden;
+  background: #fff !important;
+  transition: color 0.32s;
+  z-index: -1;
+  font-size: 16px !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 25px;
+  width: 220px;
+  height: 64px;
+  top: -20px;
+  right: -40px;
+  z-index: 1;
+}
+
+.splide__slide a.p-kv_slider__track__list__item__inner__info__btn:hover {
+  opacity: 1;
+  z-index: 0;
+  color: #fff !important;
+}
+
+.p-kv_slider__track__list__item__inner__info__btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background-color: #44B9B5;
+  transition: width 0.32s;
+  z-index: 0;
+}
+
+.p-kv_slider__track__list__item__inner__info__btn:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+
+.p-kv_slider__track__list__item__inner__info__btn::after {
+  position: absolute;
+  content: '';
+  width: 27px;
+  height: 6px;
+  background-image: url(../img/top/arrow-next.png);
+  background-size: cover;
+  top: 27px;
+  right: 15px;
+}
+
+.p-kv_slider__track__list__item__inner__info__btn:hover::after {
+  background-image: url(../img/top/arrow-next-white.png);
+}
+
+.p-kv_slider__track__list__item__inner__info__btn span {
+  position: relative;
+  z-index: 1;
+}
+
+/* news */
+#news-slider {
+  padding: 20px 0;
+  border-bottom: 1px solid #C8C8C8;
+}
+
+.news-slider {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+#news-slider .splide__slide a {
+  display: flex;
+  align-items: center;
+}
+
+#news-slider .news-slider__date {
+  width: 10em;
+}
+
+#news-slider .news-slider__text {
+  width: calc(100% - 10em - 100px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#news-slider .splide__arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  gap: 25px;
+}
+
+#news-slider .splide__arrow {
+  width: 28px;
+  height: 100%;
+  background: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: static;
+}
+
+#news-slider .splide__arrow svg {
+  display: none;
+}
+
+#news-slider .splide__arrow--next {
+  background-image: url(../img/top/arrow-next2.png);
+}
+
+#news-slider .splide__arrow--prev {
+  background-image: url(../img/top/arrow-prev2.png);
+}
+
+.seasonal-products__head {
+  position: relative;
+}
+
+.seasonal-products__head::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #F4F4F4;
+  bottom: -50px;
+  left: 0;
+}
+
+#seasonal-products .item--subscription_image {
+  width: 650px;
+}
+
+#seasonal-products .item--subscription_lead {
+  width: calc(100% - 650px);
+}
+
+#seasonal-products p {
+  margin-top: 15px;
+}
+
+#seasonal-products .item--subscription_icon {
+  width: 80px;
+  height: 80px;
+  background: none;
+  border: 1px solid #BB9C45;
+  color: #BB9C45;
+  margin-bottom: 15px;
+}
+
+.seasonal-products__body {
+  margin-top: 110px;
+  display: flex;
+  gap: 50px 30px;
+}
+
+.seasonal-products__item {
+  width: calc((100% - 60px) / 3);
+}
+
+.seasonal-products__item p {
+  margin: 10px 0;
+  line-height: 2;
+}
+
+.seasonal-products__item span {
+  font-size: 18px;
+}
+
+.seasonal-products__limited {
+  display: block;
+  border: 1px solid #818181;
+  color: #818181;
+  padding: 2px 5px;
+  font-size: 14px;
+  width: 5.1em;
+}
+
+.seasonal-products__body .slick-slide {
+  margin: 0 10px;
+}
+
+.seasonal-products__body .slick-list {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.seasonal-products__body .slick-dots {
+  display: none;
+}
+
+#p--ranking {
+  padding-top: 60px;
+}
+
+.c--ranking {
+  margin-top: 40px;
+  padding: 0 50px;
+}
+
+.c--ranking__number {
+  margin-bottom: 7px;
+  color: #727272;
+}
+
+.c--ranking span {
+  margin: 10px 0 5px;
+  display: block;
+}
+
+.c--ranking .seasonal-products__limited {
+  margin-top: 10px;
+}
+
+.c--ranking .splide__arrow {
+  width: 34px;
+  height: 34px;
+  /* position: relative; */
+}
+
+.c--ranking .splide__arrow::after {
+  position: absolute;
+  content: '';
+  width: 34px;
+  height: 34px;
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+}
+
+.c--ranking .splide__arrow--prev::after {
+  background-image: url(../img/top/ranking-prev.png);
+}
+.c--ranking .splide__arrow--next::after {
+  background-image: url(../img/top/ranking-next.png);
+}
+
+.c--ranking .splide__arrow svg {
+  display: none;
+}
+
+#p--lineup {
+  padding-top: 60px;
+}
+
+.c--lineup__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 50px;
+}
+
+.c--lineup__item {
+  width: calc((100% - 30px) / 3);
+  position: relative;
+}
+
+.c--lineup__item:nth-child(n+4) {
+  width: calc((100% - 15px) / 2);
+}
+
+.c--lineup__item a:hover,
+#news-slider .splide__slide a:hover,
+.seasonal-products__item a:hover,
+.splide__slide a:hover,
+.c--scene__links a:hover,
+.c--journal__item a:hover,
+.c--recipes__item a:hover,
+.c--instagram__images a:hover {
+  opacity: 0.7;
+}
+
+.c--lineup__image {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+
+.c--lineup__image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
+}
+
+.c--lineup__item:nth-child(n+4) .c--lineup__image::after {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 40%);
+}
+
+.c--lineup__image img {
+  height: 100%;
+}
+
+.c--lineup__lead,
+.c--lineup__lead a {
+  color: #fff;
+}
+
+.c--lineup__lead {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30px;
+}
+
+.c--lineup__title {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.c--lineup__title span {
+  font-size: 14px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.c--lineup__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 60px;
+  margin-top: 30px;
+}
+
+.c--lineup__links a {
+  position: relative;
+  padding-right: 50px;
+  font-weight: bold;
+}
+
+.c--lineup__links a::after {
+  position: absolute;
+  content: '';
+  width: 28px;
+  height: 6px;
+  background-image: url(../img/top/link-arrow.png);
+  background-size: cover;
+  top: 10px;
+  right: 0;
+}
+
+#p--scene {
+  margin-top: 100px;
+}
+
+.c--scene__item {
+  display: flex;
+}
+
+.c--scene__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.c--scene__image {
+  width: calc(100% - 600px);
+}
+
+.c--scene__image img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.c--scene__lead {
+  width: 600px;
+  padding: 100px 200px 100px 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F4F4F4;
+}
+
+.c--scene__lead.sp {
+  display: none;
+}
+
+.c--scene__item:nth-child(even) .c--scene__lead {
+  padding-left: 200px;
+  padding-right: 100px;
+}
+
+.c--scene__title {
+  font-size: 38px;
+}
+
+.c--scene__title span {
+  font-size: 14px;
+  display: block;
+  color: #727272;
+}
+
+.c--scene__links {
+  padding-top: 20px;
+}
+
+.c--scene__links a {
+  width: 100%;
+  padding-right: 50px;
+  position: relative;
+  display: block;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.c--scene__links a::after {
+  position: absolute;
+  content: '';
+  width: 26.5px;
+  height: 6px;
+  background-image: url(../img/top/scene-arrow.png);
+  background-size: cover;
+  top: 10px;
+  right: 0;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #C8C8C8;
+  width: fit-content;
+  margin: 40px auto 0;
+}
+
+.tab {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #171719;
+  margin-right: 10px;
+  position: relative;
+}
+
+.tab.active {
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.tab-content {
+  width: 100%;
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.indicator {
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #44B9B5;
+  border-radius: 50%;
+  left: 0;
+  transform: translateY(50%);
+  transition: left 0.3s;
+}
+
+#p--journal {
+  padding: 40px 0 100px;
+  margin-bottom: 100px;
+  background-color: #F4F4F4;
+}
+
+/* .c--journal__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 60px;
+} */
+
+.c--journal__item {
+  width: calc((100% - 60px) / 2);
+}
+
+.c--journal__item:nth-child(n+2) {
+  display: inline-block;
+  padding-left: 60px;
+}
+
+.c--journal__item:nth-child(n+3) {
+  padding-top: 50px;
+}
+
+.c--journal__item:nth-child(n+2) a {
+  display: flex;
+  gap: 20px;
+}
+
+.c--journal__item:nth-child(n+2) p {
+  display: none;
+}
+
+.c--journal__item:nth-child(n+2) img {
+  max-width: 250px;
+}
+
+.c--journal__inner .seasonal-products__limited {
+  margin-top: 12px;
+}
+
+.c--journal__item:nth-child(n+2) .seasonal-products__limited {
+  margin-top: 0;
+}
+
+.c--journal__date {
+  margin-top: 5px;
+}
+
+.c--journal__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.c--journal__lead p {
+  margin-top: 10px;
+  line-height: 1.7;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c--recipes__inner {
+  overflow: hidden;
+}
+
+.c--recipes__list {
+  display: flex;
+  gap: 16px;
+  margin-top: 50px;
+}
+
+.c--recipes__item {
+  width: calc((100% - 32px) / 3);
+}
+
+.c--recipes__item a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+}
+
+.c--recipes__lead {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 100%);
+}
+
+.c--recipes__title {
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+  color: #fff;
+  padding-right: 50px;
+}
+
+.c--recipes__title::before,
+.c--recipes__title::after {
+  position: absolute;
+  content: '';
+}
+
+.c--recipes__title::before {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.c--recipes__title::after {
+  width: 20px;
+  height: 6px;
+  background-image: url(../img/top/recipes-arrow.png);
+  background-size: cover;
+  bottom: 16px;
+  right: 6px;
+}
+
+#p--recipes .c--journal__button a {
+  padding-right: 50px;
+}
+
+.c--shop__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 60px;
+  margin-top: 50px;
+}
+
+.c--shop__item {
+  width: calc((100% - 120px) / 3);
+}
+
+.c--shop__name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.c--shop__item p {
+  margin-top: 15px;
+}
+
+.c--shop__item a {
+  width: 14.78px;
+  height: 20px;
+  background-image: url(../img/top/pin.png);
+  background-size: cover;
+  position: relative;
+  top: 4px;
+  left: 10px;
+  padding-left: 15px;
+  display: inline-block;
+  transition: all 0.16s 0s ease;
+}
+
+.c--shop__item a:hover {
+  top: 6px;
+}
+
+#p--instagram {
+  position: relative;
+  padding-top: 100px;
+}
+
+.c--instagram__inner {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #F4F4F4;
+}
+
+.c--instagram__inner .w1200 {
+  display: flex;
+  height: 100%;
+}
+
+.c--instagram__images {
+  width: calc(230px * 3);
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.c--instagram__images img {
+  width: 230px;
+}
+
+.c--instagram__lead {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 0 auto;
+}
+
+.c--instagram__lead img {
+  width: 30px;
+  height: 30px;
+}
+
+.c--instagram__title {
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+.c--instagram__inner p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.c--instagram__inner .c--journal__button a,
+#p--contact .c--journal__button a {
+  margin-top: 40px;
+}
+
+#p--contact .c--journal__button a {
+  padding-left: 50px;
+}
+
+#p--contact .c--journal__button a::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/top/contact.png);
+  background-size: cover;
+  width: 22px;
+  height: 16px;
+  top: 20px;
+  left: 17px;
+}
+
+#p--contact .c--journal__button a:hover::before {
+  background-image: url(../img/top/contact-hover.png);
+}
+
+#p--contact {
+  margin-top: 100px;
+  padding: 100px;
+  border-top: 1px solid #C8C8C8;
+  text-align: center;
+}
+
+#p--contact p {}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.seasonal-products__body .slick-prev,
+.seasonal-products__body .slick-next {
+  height: 34px;
+  width: 34px;
+  z-index: 1;
+}
+
+.seasonal-products__body .slick-prev {
+  left: -1em;
+}
+
+.seasonal-products__body .slick-next {
+  right: -1em;
+}
+
+.seasonal-products__body .slick-prev::before,
+.seasonal-products__body .slick-next::before {
+  font-size: 34px;
+}
+
+@media screen and (max-width:1199px) {
+  .c--instagram__images {
+    margin: auto;
+  }
+
+  .c--instagram__images {}
+
+  .c--instagram__inner {
+    position: relative;
+    top: auto;
+    bottom: 0;
+    transform: translateX(0);
+  }
+
+  .c--instagram__inner .w1200 {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .seasonal-products__body {
+    display: flex;
+    gap: 50px 30px;
+  }
+
+  .seasonal-products__item {
+    width: calc((100% - 60px) / 3);
+  }
+
+  .splide-initialized .seasonal-products__body {
+    display: flex;
+  }
+
+  .c--journal__item:nth-child(1) {
+    float: left;
+  }
+
+  .c--journal__item:nth-child(1) img {
+    max-height: 400px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  #news-slider .splide__slide a {
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+  }
+
+  #news-slider .news-slider__date {
+    width: auto;
+  }
+
+  #news-slider .news-slider__text,
+  #seasonal-products .item--subscription_image,
+  #seasonal-products .item--subscription_lead,
+  .c--lineup__item,
+  .c--scene__image,
+  .c--scene__lead,
+  .c--journal__item,
+  .seasonal-products__item,
+  .seasonal-products__body.w1200,
+  .c--journal__inner.w1200,
+  .c--recipes__list.w1200,
+  .c--shop__list.w1200,
+  #p--instagram .w1200 {
+    width: 100%;
+  }
+
+  #news-slider .splide__arrows {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+  }
+
+  .u-text--head--overlay {
+    padding: 25px 20px;
+    width: auto;
+    position: absolute;
+    left: -30px;
+    font-size: 20px !important;
+    bottom: 130px;
+  }
+
+  .p-kv_slider__track__list__item__inner {
+    padding-top: 144%;
+  }
+
+  .p-kv_slider__track__list__item:nth-child(1) .p-kv_slider__track__list__item__inner {
+    background-image: url('../img/top/slider01_sp.jpg') !important;
+  }
+
+  .p-kv_slider__track__list__item:nth-child(2) .p-kv_slider__track__list__item__inner {
+    background-image: url('../img/top/slider02_sp.jpg') !important;
+  }
+
+  .p-kv_slider__track__list__item:nth-child(3) .p-kv_slider__track__list__item__inner {
+    background-image: url('../img/top/slider03_sp.jpg') !important;
+  }
+
+  .p-kv_slider__track__list__item__inner__info__btn {
+    top: -35px;
+    right: 0;
+    width: 100%;
+    max-width: none;
+    height: 44px;
+    padding-left: 17px;
+    padding-right: 50px;
+    font-size: 14px !important;
+  }
+
+  .p-kv_slider__track__list__item__inner__info__btn::after {
+    top: 18px;
+  }
+
+  .c--scene__item,
+  .c--journal__item:nth-child(n+2) a {
+    flex-direction: column;
+  }
+
+  .item--subscription_title,
+  #seasonal-products p {
+    text-align: left;
+  }
+
+  #item--subscription .item--subscription_lead .item--subscription_title {
+    text-align: center;
+  }
+
+  .c--instagram__images {
+    width: 100%;
+  }
+
+  .c--instagram__images a{
+    width: calc(100% / 3);
+  }
+
+  .c--instagram__images img {
+    width: 100%;
+  }
+
+  .c--instagram__inner {
+    height: 375px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+  }
+
+  .seasonal-products__head {
+    padding-bottom: 60px;
+  }
+
+  .seasonal-products__head::before {
+    height: calc(100% - 140px);
+    bottom: 40px;
+  }
+
+  .seasonal-products__body {
+    margin: 0 auto;
+  }
+
+  .seasonal-products__item {
+    margin: 0 10px;
+  }
+
+  .slick-center .seasonal-products__item {
+    transform: scale(1.05);
+  }
+
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+  }
+
+  .slick-prev::after {
+    background-image: url(../img/top/ranking-prev.png);
+    position: absolute;
+    content: '';
+    width: 34px;
+    height: 34px;
+    background-size: cover;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+  }
+
+  .slick-next::after {
+    background-image: url(../img/top/ranking-next.png);
+    position: absolute;
+    content: '';
+    width: 34px;
+    height: 34px;
+    background-size: cover;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+  }
+
+  .slick-prev {
+    left: 5%;
+  }
+
+  .slick-next {
+    right: 5%;
+  }
+
+  #p--ranking {
+    padding-top: 0;
+  }
+
+  .c--ranking {
+    margin-top: 25px;
+    padding: 0;
+  }
+
+  .splide__arrow--prev {
+    left: -1em;
+  }
+
+  .splide__arrow--next {
+    right: -1em;
+  }
+
+  #p--lineup {
+    padding-top: 0;
+  }
+
+  .c--lineup__image::after {
+    display: none;
+  }
+
+  .c--lineup__lead,
+  .c--lineup__lead a {
+    color: #171719;
+  }
+
+  .c--lineup__title {
+    color: #171719;
+  }
+
+  .c--lineup__title span {
+    color: #727272;
+  }
+
+  .c--lineup__lead {
+    position: relative;
+    padding: 0 0 20px;
+  }
+
+  .c--lineup__links {
+  margin-top: 7px;
+}
+
+.c--lineup__links a {
+  width: 110px;
+  box-sizing: border-box;
+  padding-right: 30px;
+}
+
+.c--lineup__links a::after {
+  background-image: url(../img/top/scene-arrow-black.png);
+}
+
+.c--lineup__image {
+  height: auto;
+}
+
+.c--lineup__item:nth-child(n+4) .c--lineup__title {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.c--lineup__item:nth-child(n+4) .c--lineup__title span {
+  padding-left: 0;
+}
+
+.c--lineup__item:nth-child(n+4) .c--lineup__title {
+  font-size: 20px;/*18px*/
+}
+
+.c--scene__image {
+  height: 200px;
+}
+
+.c--scene__lead,
+.c--scene__item:nth-child(even) .c--scene__lead {
+  padding: 40px 5%;
+}
+
+.c--scene__lead.pc {
+  display: none;
+}
+
+.c--scene__lead.sp {
+  display: flex;
+}
+
+.c--scene__button {
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 2px solid #fff; */
+}
+
+.c--scene__title {
+  cursor: pointer;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  font-size: 22px;
+  width: 50%;
+}
+
+.c--scene__title.selected {
+  border: 1px solid #171719;
+  border-bottom: none;
+  /* background-color: #fff; */
+}
+
+.c--scene__title:not(.selected) {
+  border-bottom: 1px solid #171719;
+}
+
+.c--scene__links {
+  margin-top: 0;
+}
+
+.c--scene__links a {
+  margin-top: 20px;
+}
+
+#p--journal {
+  padding-bottom: 70px;
+  margin-bottom: 60px;
+}
+
+.c--journal__scroll {
+  overflow-x: scroll;
+  padding-bottom: 7px;
+  margin-left: 5%;
+}
+
+.tabs a {
+  white-space: nowrap;
+}
+
+/* .content {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.slick-track .c--journal__item:nth-child(1) {
+  display: none;
+}
+
+.c--journal__list {
+  display: flex;
+  gap: 20px;
+}
+
+.c--journal__list .slick-track {
+  display: flex !important;
+  justify-content: flex-start;
+}
+
+.tab-content .c--journal__item:nth-child(1) {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c--journal__item {
+  /* flex: 1 0 auto; */
+  padding: 20px 0;
+  border: none;
+  margin: auto;
+}
+
+.c--journal__item:nth-child(n+2) {
+  padding-top: 50px;
+  padding-left: 0;
+}
+
+.c--journal__item img,
+.c--journal__item:nth-child(n+2) img {
+  max-width: none;
+}
+
+.c--journal__list .slick-slide,
+.c--recipes__list .slick-slide {
+  margin: 0 10px;
+}
+
+.c--journal__item p {
+  display: none;
+}
+
+.c--journal__item.sp {
+  display: block;
+}
+
+/* .c--recipes__inner {
+  overflow-x: scroll;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.c--recipes__inner {
+  overflow-x: scroll;
+}
+
+.c--recipes__list.w1200 {
+  padding-bottom: 8px;
+  width: calc(180vw + 32px);
+}
+
+.c--recipes__item {
+  width: 60vw;
+} */
+
+#p--recipes .c--journal__button a {
+  margin-top: 50px;
+}
+
+#p--shop {
+  position: relative;
+}
+
+.c--shop__list {
+  display: block;
+  position: relative;
+}
+
+#p--shop .slick-slide {
+  margin: 0 10px;
+  width: 90vw;
+}
+
+#p--contact {
+  padding: 40px 0;
+}
+
+#p--shop .slick-cloned,
+#p--shop .swiper-button-prev,
+#p--shop .swiper-button-next {
+  display: none;
+}
+
+#p--shop .slick-arrow {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+#p--shop .slick-arrow::before {
+  width: 18.5px;
+  height: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  content: "";
+  top: 14px;
+  position: absolute;
+}
+
+#p--shop .slick-prev::before {
+  background-image: url(../img/top/shop-prev.png);
+  left: 8px;
+}
+
+#p--shop .slick-next::before {
+  background-image: url(../img/top/shop-next.png);
+  right: 8px;
+}
+
+#p--shop .slick-arrow {
+  top: 30%;
+}
+}
