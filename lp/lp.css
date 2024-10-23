@@ -471,7 +471,7 @@ robot{
 .card > .pl_right_card_bottom > p {
   text-align: center;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .selection {
@@ -737,10 +737,6 @@ img {
   display: none;
 } */
 .btns {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
-
   position: absolute;
   top: 50%; /* Center vertically */
   left: 0; /* Align to left */
@@ -749,6 +745,16 @@ img {
   justify-content: space-between; /* Space out buttons */
   transform: translateY(-50%); /* Adjust to center vertically */
   z-index: 1; /* Ensure buttons are on top of images */
+}
+
+.btns > .prev{
+  font-size: 18px;
+  padding: 5px 15px;
+}
+
+.btns > .next{
+  font-size: 18px;
+  padding: 5px 15px;
 }
 
 .special_method > .spec_wrapped {
@@ -1343,6 +1349,10 @@ img {
   max-width: 22px;
   width: 100px;
 }
+.lover_right > button > #imga1 {
+  display: none;
+}
+
 
 .lover_right > button:hover > #imga1 {
   display: block;
@@ -1511,19 +1521,19 @@ img {
 
 .prev,
 .next {
-  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  background-color: rgba(255, 255, 255, 0.7);
   border: none;
   cursor: pointer;
-  padding: 10px;
-  border-radius: 50%; /* Circular buttons */
+  padding: 10px 5px;
+  border-radius: 50%; 
 }
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(255, 255, 255, 1); /* Change on hover */
+  background-color: rgba(255, 255, 255, 1); 
 }
 
-/* .prev {
+.prev {
   left: 10px;
   font-size: 30px;
 }
@@ -1531,7 +1541,7 @@ img {
 .next {
   right: 10px;
   font-size: 30px;
-} */
+}
 
 .contntNnav2 {
   display: grid;
@@ -2356,7 +2366,7 @@ img {
   }
 
   .enjoyment-answer.show {
-    max-height: 500px; /* Set a max height for expanded state (adjust if necessary) */
+    max-height: 1000px; /* Set a max height for expanded state (adjust if necessary) */
     transition: max-height 0.32s ease; /* Apply same transition */
   }
 
@@ -2402,6 +2412,8 @@ img {
   #content-description {
     max-width: 100%;
     width: 100%;
+    font-size: 16px;
+    font-weight: 400;
   }
   #enjoyment_content-description {
     max-width: 100%;
@@ -2753,6 +2765,8 @@ img {
   .eating-answer.show {
     max-height: 5000px; /* Set a max height for expanded state (adjust if necessary) */
     transition: max-height 0.32s ease; /* Apply same transition */
+    display: grid;
+    gap: 50px;
   }
 
   .eating-answer > p {
@@ -2788,10 +2802,8 @@ img {
     margin-top: 2%;
   }
   #eating_content-image {
-    width: 100%;
-    /* Adjust as needed */
+    width: 60%;
     height: auto;
-    max-width: 450px;
   }
   #eating_content-description {
     max-width: 400px;
@@ -2802,9 +2814,42 @@ img {
     padding-top: 10px;
     /* Adjust as needed */
     max-width: 450px;
+    text-align: center;
+  }
+
+  .eating_text-content > p{
+    font-size: 20px;
+    font-weight: 500;
   }
 
   .lpKeyviewMessage{
     font-size: 20px;
   }
+
+  .popup-content > .pop_cont_wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .pop_cont_wrap > .pop_cont_wrap_left {
+    width: 100%;
+  }
+  .pop_cont_wrap > .pop_cont_wrap_right {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    background-color: #c7eae9;
+    gap: 50px;
+    padding: 20px 20px;
+  }
+
+  .pop_cont_wrap_left > img {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+
 }

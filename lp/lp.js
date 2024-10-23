@@ -214,41 +214,50 @@ const sliders = {};
     }
 }
 
+// Get all buttons
+const buttons = document.querySelectorAll('.nav-item');
+
+// Set up event listeners for each button
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove 'active' class from all buttons
+        buttons.forEach(btn => btn.classList.remove('active'));
+        // Add 'active' class to the clicked button
+        button.classList.add('active');
+    });
+});
+
+
+
 // Enjoyment part
 
-  // FAQ part
-//   function toggleEnjoy(element) {
-//     const answer = element.nextElementSibling;
-//     const toggleIcon = element.querySelector('.toggle');
-
-//     if (answer.style.display === "grid") {
-//         answer.style.display = "none"; // Hide answer
-//         toggleIcon.textContent = "+"; // Change icon to +
-//     } else {
-//         answer.style.display = "grid"; // Show answer
-//         toggleIcon.textContent = "-"; // Change icon to -
-//     }
-// }
-
-
-
-
-// FAQ part
 function toggleEnjoy(element) {
-    const answer = element.nextElementSibling;
-    const toggleIcon = element.querySelector('.toggle');
+  const answer = element.nextElementSibling;
+  const toggleIcon = element.querySelector('.toggle');
 
-    if (answer.classList.contains('show')) {
-        answer.classList.remove('show'); // Remove the show class to collapse
-        toggleIcon.textContent = "+"; // Change icon to +
-    } else {
-        answer.classList.add('show'); // Add the show class to expand
-        toggleIcon.textContent = "-"; // Change icon to -
-    }
+  if (answer.classList.contains('show')) {
+      answer.classList.remove('show'); // Collapse
+      toggleIcon.textContent = "+"; // Change icon to +
+  } else {
+      // Close any other open answers
+      const allAnswers = document.querySelectorAll('.enjoyment-answer');
+      allAnswers.forEach(ans => {
+          ans.classList.remove('show');
+          ans.previousElementSibling.querySelector('.toggle').textContent = "+";
+      });
+
+      // Open the clicked answer
+      answer.classList.add('show'); // Expand
+      toggleIcon.textContent = "-"; // Change icon to -
+  }
 }
 
 
-function toggleEnjoy(element) {
+
+
+
+// eating
+function toggleEating(element) {
   const answer = element.nextElementSibling;
   const toggleIcon = element.querySelector('.toggle');
 
@@ -273,18 +282,6 @@ function toggleEnjoy(element) {
 
 
 
-// Get all buttons
-    const buttons = document.querySelectorAll('.nav-item');
-
-    // Set up event listeners for each button
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove 'active' class from all buttons
-            buttons.forEach(btn => btn.classList.remove('active'));
-            // Add 'active' class to the clicked button
-            button.classList.add('active');
-        });
-    });
 
 
 
